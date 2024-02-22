@@ -9,6 +9,12 @@ Some of the main features of selectricity include:
 - Reduce excessive looping
 - More concise and readable syntax than Vanilla JS
 
+How to import:
+
+```js
+ import select from 'selectricity';
+```
+
 ## Easy event listening
 
 selectricity:
@@ -20,8 +26,8 @@ selectricity:
 
 Compare to Vanilla JS:
 ```js
-  const $elements = document.querySelectorAll('[data-foo]');
-  $elements.forEach(($elem) => {
+  const elements = document.querySelectorAll('[data-foo]');
+  elements.forEach(($elem) => {
     $elem.addEventListener('click', () => {
       console.log('bar');
     });
@@ -32,18 +38,18 @@ You can pass multiple event names to the "listen" method as you can in jQuery:
 
 selectricity:
 ```js
-  const $hoverElements = select('[data-hotspot]');
+  const hoverElements = select('[data-hotspot]');
 
-  $hoverElements.listen('mouseenter mouseleave', ({ $node }) => {
+  hoverElements.listen('mouseenter mouseleave', ({ $node }) => {
     $node.modifyClass('toggle', 'active');
   });
 ```
 
 Compare to Vanilla JS:
 ```js
-  const $hoverElements = document.querySelectorAll('[data-hotspot]');
+  const hoverElements = document.querySelectorAll('[data-hotspot]');
 
-  $hoverElements.forEach((el) => {
+  hoverElements.forEach((el) => {
     el.addEventListener('mouseenter', () => {
       el.classList.toggle('active');
     });

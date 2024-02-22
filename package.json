@@ -1,6 +1,6 @@
 {
   "name": "selectricity",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple DOM querying and event listening",
   "main": "index.js",
   "scripts": {

@@ -93,9 +93,13 @@ selectricity:
   
   buttons.listen('click', ({ $node, e, index }) => {
     e.preventDefault();
+    // remove active class from all buttons without looping!
     buttons.modifyClass('remove', 'active');
+    // add active class to currently clicked button
     $node.modifyClass('add', 'active');
+    // remove active class from all images without looping!
     images.modifyClass('remove', 'active');
+    // add active class to image with the same index as the currently clicked button
     images[index].modifyClass('add', 'active');
   });
 ```
@@ -143,7 +147,7 @@ JS:
         this.swatches.modifyClass('remove', 'swatch--selected');
         // add class to currently clicked node
         $node.modifyClass('add', 'swatch--selected');
-        this.addToCart.dataset.addItem = variantId;
+        this.addToCart.dataset.addToCart = variantId;
       });
     }
   }

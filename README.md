@@ -147,6 +147,7 @@ JS:
         this.swatches.modifyClass('remove', 'swatch--selected');
         // add class to currently clicked node
         $node.modifyClass('add', 'swatch--selected');
+        // update variant id value on add to cart button
         this.addToCart.dataset.addToCart = variantId;
       });
     }

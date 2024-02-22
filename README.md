@@ -158,17 +158,17 @@ HTML:
     </button>
     <ul class="swatch-list">
       <li>
-        <button class="swatch swatch--selected" data-swatch="12345">
+        <button class="swatch swatch--selected" data-swatch data-variant-id="12345">
           Grey
         </button>
       </li>
       <li>
-        <button class="swatch" data-swatch="23456">
+        <button class="swatch" data-swatch data-variant-id="23456">
           Green
         </button>
       </li>
       <li>
-        <button class="swatch" data-swatch="34567">
+        <button class="swatch" data-swatch data-variant-id="34567">
           Brown
         </button>
       </li>

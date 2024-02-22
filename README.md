@@ -27,6 +27,7 @@ selectricity:
 Compare to Vanilla JS:
 ```js
   const elements = document.querySelectorAll('[data-foo]');
+  
   elements.forEach(($elem) => {
     $elem.addEventListener('click', () => {
       console.log('bar');

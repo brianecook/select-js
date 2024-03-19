@@ -37,6 +37,30 @@ const nodeListPrototype = {
   modifyClass(method, className) {
     this.execute((node) => node.classList[method](className));
   },
+  addClass(className) {
+    this.execute((node) => node.classList.add(className));
+  },
+  removeClass(className) {
+    this.execute((node) => node.classList.remove(className));
+  },
+  toggleClass(className) {
+    this.execute((node) => node.classList.toggle(className));
+  },
+  addAttr(attribute, value = '') {
+    this.execute((node) => node.setAttribute(attribute, value));
+  },
+  removeAttr(attribute) {
+    this.execute((node) => node.removeAttribute(attribute));
+  },
+  toggleAttr(attribute, value = '') {
+    this.execute((node) => {
+      if (node.hasAttribute(attribute)) {
+        node.removeAttribute(attribute);
+      } else {
+        node.setAttribute(attribute, value);
+      }
+    });
+  }
 };
 
 function select(selector, parent = document) {

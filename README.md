@@ -42,7 +42,7 @@ selectricity:
   const hoverElements = select('[data-hotspot]');
 
   hoverElements.listen('mouseenter mouseleave', ({ $node }) => {
-    $node.modifyClass('toggle', 'active');
+    $node.toggleClass('active');
   });
 ```
 
@@ -95,13 +95,13 @@ selectricity:
   buttons.listen('click', ({ $node, e, index }) => {
     e.preventDefault();
     // remove active class from all buttons without looping!
-    buttons.modifyClass('remove', 'active');
+    buttons.removeClass('active');
     // add active class to currently clicked button
-    $node.modifyClass('add', 'active');
+    $node.addClass('active');
     // remove active class from all images without looping!
-    images.modifyClass('remove', 'active');
+    images.removeClass('active');
     // add active class to image with the same index as the currently clicked button
-    images[index].modifyClass('add', 'active');
+    images[index].addClass('active');
   });
 ```
 
@@ -145,9 +145,9 @@ JS:
       this.swatches.listen('click', ({ $node }) => {
         const { variantId } = $node.dataset;
         // remove active class from all swatches without looping!
-        this.swatches.modifyClass('remove', 'swatch--selected');
+        this.swatches.removeClass('swatch--selected');
         // add class to currently clicked node
-        $node.modifyClass('add', 'swatch--selected');
+        $node.addClass('swatch--selected');
         // update variant id value on add to cart button
         this.addToCart.dataset.addToCart = variantId;
       });

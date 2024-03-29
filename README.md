@@ -181,3 +181,60 @@ HTML:
     </ul>
   </add-to-cart>
 ```
+
+## API
+
+### Methods
+
+#### listen(eventName, callback, dynamic) ⇒ <code>void</code>
+Attach event listeners to selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| eventName | <code>string</code> | Name of event to listen for on selected element(s). For multiple events, separate each event name by a single space. |
+| callback | <code>function</code> | Callback function to fire on event. |
+| dynamic | <code>boolean</code> | Indicates if element was dynamically generated. |
+
+#### addClass(className) ⇒ <code>void</code>
+Add class to selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| className | <code>string</code> | Name of the class to add. |
+
+#### removeClass(className) ⇒ <code>void</code>
+Remove class from selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| className | <code>string</code> | name of the class to remove. |
+
+#### toggleClass(className) ⇒ <code>void</code>
+Toggle class on selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| className | <code>string</code> | name of the class to toggle. |
+
+#### addAttr(attribute, value) ⇒ <code>void</code>
+Add attribute to selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| attribute | <code>string</code> | name of the attribute to add. |
+| value | <code>string</code> | value of the attribute to add. Defaults to empty string. |
+
+#### removeAttr(attribute) ⇒ <code>void</code>
+Remove attribute from selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| attribute | <code>string</code> | name of the attribute to remove. |
+
+#### toggleAttr(attribute) ⇒ <code>void</code>
+Toggle attribute on selected element(s).
+
+| Param  | Type                | Description  |
+| ------ | ------------------- | ------------ |
+| attribute | <code>string</code> | name of the attribute to toggle. |
+| value | <code>string</code> | value of the attribute to toggle. Defaults to empty string. |

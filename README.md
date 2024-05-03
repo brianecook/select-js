@@ -1,7 +1,7 @@
 # selectricity
 A concise and effective replacement for jQuery.
 
-**selectricity** is a simple library used to emulate some of the functonality provided by jQuery without the hefty filesize and unneeded complexity. It is a great tool for dev teams that have junior developers who may be transitioning to using vanilla JS, but can be useful for developers of any skill level.
+**selectricity** is a simple library used to emulate some of the functonality provided by jQuery without the hefty filesize and unneeded complexity. It is a great tool for dev teams that have junior developers who may be transitioning to using vanilla JS, but can be useful for developers of any skill level. **Type definitions now include for TypeScript projects!**
 
 Some of the main features of selectricity include:
 

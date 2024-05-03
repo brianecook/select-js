@@ -46,6 +46,11 @@ const nodeListPrototype = {
   toggleClass(className) {
     this.execute((node) => node.classList.toggle(className));
   },
+  hasClass(className) {
+    if (!this.classList) return false;
+    const classes = [...this.classList];
+    return classes.includes(className);
+  },
   addAttr(attribute, value = '') {
     this.execute((node) => node.setAttribute(attribute, value));
   },

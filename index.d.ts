@@ -10,6 +10,7 @@ declare module 'selectricity' {
     addClass: (className: string) => void;
     removeClass: (className: string) => void;
     toggleClass: (className: string) => void;
+    hasClass: (className: string) => boolean;
     addAttr: (attribute: string, value?: string | number | boolean) => void;
     removeAttr: (attribute: string) => void;
     toggleAttr: (attribute: string, value?: string | number | boolean) => void;
